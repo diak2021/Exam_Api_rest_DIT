@@ -27,7 +27,7 @@ jobs:
         pip install black ruff
 
     - name: Check code format with Black
-      run: black --check 
+      run: black --check .
 
     - name: Check code quality with Ruff
-      run: ruff check 
+      run: ruff check .
