@@ -19,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.12'  
+        python-version: '3.12'
 
     - name: Install dependencies
       run: |
@@ -27,7 +27,7 @@ jobs:
         pip install black ruff
 
     - name: Check code format with Black
-      run: black --check .
+      run: black --check 
 
     - name: Check code quality with Ruff
-      run: ruff .
+      run: ruff check 
